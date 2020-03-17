@@ -17,7 +17,7 @@ resource "aws_iam_group_membership" "developers_group_membership" {
 
 # attach a policy to the group
 resource "aws_iam_group_policy" "developers_group_policy" {
-  name  = "developers_group_policy"
+  name = "developers_group_policy"
   group = aws_iam_group.developers.id
 
   policy = <<EOF
